@@ -1,0 +1,106 @@
+/* Board Container */
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background-color: #fafafa;
+  /* Light grey background for the board */
+  padding: 20px;
+  border-radius: 10px;
+  /* Rounded corners for the board */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Slight shadow effect for the board */
+}
+
+/* Board Row */
+.board-row {
+  display: flex;
+  margin-bottom: 10px;
+  /* Add space between rows */
+}
+
+/* Individual Square */
+.square {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  user-select: none;
+  border-radius: 5px;
+  /* Rounded corners for squares */
+}
+
+/* Hover effect for squares */
+.square:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+/* X and O Colors */
+.square h5 {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+  /* Default color */
+}
+
+/* X's will be red */
+.square.x h5 {
+  color: red;
+}
+
+/* O's will be green */
+.square.o h5 {
+  color: green;
+}
+
+/* Player turn display */
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Winner message */
+h2 {
+  color: #4caf50;
+  /* Green color for the winner */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Body background */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e8f5e9;
+  /* Light green background for the body */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
